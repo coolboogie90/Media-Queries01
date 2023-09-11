@@ -1,0 +1,82 @@
+/* Hide all h2 elements by default */
+h2 {
+    display: none;
+}
+
+
+/*Note: We don't need as many {display: none;} if we add to the media queries some max-width */
+
+/* Mobile */
+body {
+    background-color: gold;
+}
+
+h2.a {
+    display: block;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) {
+    body {
+        background-color: pink;
+    }
+
+    h2.a {
+        display: none;
+    }
+
+    h2.b {
+        display: block;
+    }
+}
+
+/* Laptop 13 inches */
+@media (min-width: 1280px) {
+    body {
+        background-color: chocolate;
+    }
+
+    h2.a,
+    h2.b {
+        display: none;
+    }
+
+    h2.c {
+        display: block;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1440px) {
+    body {
+        background-color: cadetblue;
+    }
+
+    h2.a,
+    h2.b,
+    h2.c {
+        display: none;
+    }
+
+    h2.d {
+        display: block;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1920px) {
+    body {
+        background-color: cornflowerblue;
+    }
+
+    h2.a,
+    h2.b,
+    h2.c,
+    h2.d {
+        display: none;
+    }
+    h2.e {
+        display: block;
+    }
+}
